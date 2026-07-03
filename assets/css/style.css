@@ -379,3 +379,39 @@ footer{
     }
 
 }
+
+/* ================================
+Worksheet Toast
+================================ */
+
+.worksheet-toast{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    background:#198754;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    opacity:0;
+
+    transition:.3s;
+
+    z-index:99999;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.worksheet-toast.show{
+
+    opacity:1;
+
+}
