@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Workbook PjBL DKV</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- ==========================
+            SIDEBAR
+    =========================== -->
+
+    <aside class="sidebar shadow">
+
+        <div class="sidebar-header">
+
+            <div class="logo">
+
+                <i class="bi bi-palette-fill"></i>
+
+            </div>
+
+            <div>
+
+                <h5 class="mb-0 fw-bold">
+                    Workbook DKV
+                </h5>
+
+                <small class="text-muted">
+                    PjBL Interactive
+                </small>
+
+            </div>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+
+                <a href="#" class="active">
+
+                    <i class="bi bi-grid-fill"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="bi bi-book-half"></i>
+
+                    Project
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="bi bi-folder2-open"></i>
+
+                    Portfolio
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="bi bi-bar-chart-line"></i>
+
+                    Progress
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="bi bi-gear-fill"></i>
+
+                    Pengaturan
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="bi bi-info-circle"></i>
+
+                    Tentang
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ==========================
+            MAIN
+    =========================== -->
+
+    <main class="content">
+
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-lg">
+
+            <div class="container-fluid">
+
+                <button class="btn btn-light d-lg-none">
+
+                    <i class="bi bi-list"></i>
+
+                </button>
+
+                <div>
+
+                    <h4 class="fw-bold mb-0">
+
+                        Dashboard
+
+                    </h4>
+
+                    <small class="text-secondary">
+
+                        Workbook Project Based Learning
+
+                    </small>
+
+                </div>
+
+                <div class="ms-auto d-flex align-items-center gap-3">
+
+                    <button class="btn btn-light rounded-circle">
+
+                        <i class="bi bi-bell"></i>
+
+                    </button>
+
+                    <button class="btn btn-light rounded-circle">
+
+                        <i class="bi bi-moon-stars"></i>
+
+                    </button>
+
+                    <img
+                        src="https://ui-avatars.com/api/?name=Siswa&background=4F46E5&color=fff"
+                        class="rounded-circle"
+                        width="42"
+                    >
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Welcome Card -->
+
+        <div
+            class="card welcome-card border-0 shadow-sm mt-4"
+            data-aos="fade-up">
+
+            <div class="card-body">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-8">
+
+                        <h2 class="fw-bold">
+
+                            Selamat Datang 👋
+
+                        </h2>
+
+                        <p class="text-secondary">
+
+                            Selamat datang di Workbook Project Based Learning
+                            Desain Komunikasi Visual.
+
+                            Semua project yang kamu kerjakan akan tersimpan
+                            sebagai portofolio digital.
+
+                        </p>
+
+                        <button class="btn btn-primary">
+
+                            Mulai Belajar
+
+                        </button>
+
+                    </div>
+
+                    <div class="col-lg-4 text-center">
+
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                            class="img-fluid"
+                            style="max-height:180px;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+                <!-- =========================================
+                STATISTIK
+        ========================================== -->
+
+        <div class="row mt-4 g-4">
+
+            <div class="col-lg-4">
+
+                <div class="card dashboard-card border-0 shadow-sm h-100">
+
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between align-items-center">
+
+                            <div>
+
+                                <small class="text-secondary">
+                                    Progress Belajar
+                                </small>
+
+                                <h2 class="fw-bold mt-2">
+                                    0%
+                                </h2>
+
+                            </div>
+
+                            <div class="icon-circle bg-primary-subtle">
+
+                                <i class="bi bi-graph-up-arrow fs-3 text-primary"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="progress mt-4" style="height:10px;">
+
+                            <div
+                                class="progress-bar bg-primary"
+                                role="progressbar"
+                                style="width:0%;">
+
+                            </div>
+
+                        </div>
+
+                        <small class="text-secondary">
+
+                            Belum ada project yang diselesaikan.
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="card dashboard-card border-0 shadow-sm h-100">
+
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div>
+
+                                <small class="text-secondary">
+
+                                    Total Project
+
+                                </small>
+
+                                <h2 class="fw-bold mt-2">
+
+                                    36
+
+                                </h2>
+
+                            </div>
+
+                            <div class="icon-circle bg-success-subtle">
+
+                                <i class="bi bi-book-half fs-3 text-success"></i>
+
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <small class="text-secondary">
+
+                            18 Project Semester 1
+
+                            <br>
+
+                            18 Project Semester 2
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="card dashboard-card border-0 shadow-sm h-100">
+
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div>
+
+                                <small class="text-secondary">
+
+                                    Portfolio
+
+                                </small>
+
+                                <h2 class="fw-bold mt-2">
+
+                                    0
+
+                                </h2>
+
+                            </div>
+
+                            <div class="icon-circle bg-warning-subtle">
+
+                                <i class="bi bi-folder2-open fs-3 text-warning"></i>
+
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <small class="text-secondary">
+
+                            Belum ada karya yang disimpan.
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =========================================
+                SEMESTER 1
+        ========================================== -->
+
+        <div class="d-flex justify-content-between align-items-center mt-5 mb-3">
+
+            <div>
+
+                <h3 class="fw-bold mb-0">
+
+                    Semester 1
+
+                </h3>
+
+                <small class="text-secondary">
+
+                    Dasar Desain & Personal Branding
+
+                </small>
+
+            </div>
+
+            <span class="badge bg-primary fs-6">
+
+                18 Project
+
+            </span>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card project-card border-0 shadow-sm">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-success">
+
+                            Pertemuan 1
+
+                        </span>
+
+                        <h5 class="mt-3 fw-bold">
+
+                            Project 1
+
+                        </h5>
+
+                        <p class="text-secondary">
+
+                            Aku Seorang Desainer
+
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+
+                            <small>
+
+                                Durasi 4 JP
+
+                            </small>
+
+                            <button class="btn btn-primary btn-sm">
+
+                                Buka
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card project-card border-0 shadow-sm">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-secondary">
+
+                            Pertemuan 2
+
+                        </span>
+
+                        <h5 class="mt-3 fw-bold">
+
+                            Project 2
+
+                        </h5>
+
+                        <p class="text-secondary">
+
+                            Mengenal Unsur Desain
+
+                        </p>
+
+                        <div class="d-flex justify-content-between">
+
+                            <small>
+
+                                4 JP
+
+                            </small>
+
+                            <button class="btn btn-outline-primary btn-sm">
+
+                                Segera Hadir
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card project-card border-0 shadow-sm">
+
+                    <div class="card-body text-center py-5">
+
+                        <i class="bi bi-plus-circle fs-1 text-secondary"></i>
+
+                        <h6 class="mt-3">
+
+                            Project Selanjutnya
+
+                        </h6>
+
+                        <small class="text-secondary">
+
+                            Akan ditambahkan secara otomatis.
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+                <!-- =========================================
+                SEMESTER 2
+        ========================================== -->
+
+        <div class="d-flex justify-content-between align-items-center mt-5 mb-3">
+
+            <div>
+
+                <h3 class="fw-bold mb-0">
+
+                    Semester 2
+
+                </h3>
+
+                <small class="text-secondary">
+
+                    Creative Merchandise Business
+
+                </small>
+
+            </div>
+
+            <span class="badge bg-success fs-6">
+
+                18 Project
+
+            </span>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card project-card border-0 shadow-sm">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-success">
+
+                            Pertemuan 19
+
+                        </span>
+
+                        <h5 class="mt-3 fw-bold">
+
+                            Project 19
+
+                        </h5>
+
+                        <p class="text-secondary">
+
+                            Creative Merchandise Business
+
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+
+                            <small>
+
+                                Durasi 4 JP
+
+                            </small>
+
+                            <button class="btn btn-outline-success btn-sm">
+
+                                Segera Hadir
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card project-card border-0 shadow-sm">
+
+                    <div class="card-body text-center py-5">
+
+                        <i class="bi bi-box-seam fs-1 text-success"></i>
+
+                        <h6 class="mt-3">
+
+                            17 Project Berikutnya
+
+                        </h6>
+
+                        <small class="text-secondary">
+
+                            Akan muncul otomatis.
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =========================================
+                TIMELINE BELAJAR
+        ========================================== -->
+
+        <div class="card border-0 shadow-sm mt-5">
+
+            <div class="card-body">
+
+                <h4 class="fw-bold mb-4">
+
+                    Timeline Pembelajaran
+
+                </h4>
+
+                <div class="row text-center">
+
+                    <div class="col">
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-circle bg-primary">
+
+                                <i class="bi bi-lightbulb text-white"></i>
+
+                            </div>
+
+                            <h6 class="mt-3">
+
+                                Ide
+
+                            </h6>
+
+                            <small class="text-secondary">
+
+                                Mencari inspirasi
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-circle bg-info">
+
+                                <i class="bi bi-pencil-square text-white"></i>
+
+                            </div>
+
+                            <h6 class="mt-3">
+
+                                Desain
+
+                            </h6>
+
+                            <small class="text-secondary">
+
+                                Canva & AI
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-circle bg-warning">
+
+                                <i class="bi bi-printer text-white"></i>
+
+                            </div>
+
+                            <h6 class="mt-3">
+
+                                Produksi
+
+                            </h6>
+
+                            <small class="text-secondary">
+
+                                Press Produk
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-circle bg-success">
+
+                                <i class="bi bi-camera-video text-white"></i>
+
+                            </div>
+
+                            <h6 class="mt-3">
+
+                                Promosi
+
+                            </h6>
+
+                            <small class="text-secondary">
+
+                                Foto & Video
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =========================================
+                DESIGN TIPS & AI CORNER
+        ========================================== -->
+
+        <div class="row mt-5 g-4">
+
+            <div class="col-lg-6">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <div class="card-body">
+
+                        <h4 class="fw-bold">
+
+                            💡 Design Tips
+
+                        </h4>
+
+                        <ul class="mt-4">
+
+                            <li>Gunakan maksimal dua jenis font dalam satu desain.</li>
+
+                            <li>Gunakan maksimal lima warna utama.</li>
+
+                            <li>Utamakan ruang kosong (white space).</li>
+
+                            <li>Jangan memenuhi seluruh bidang dengan objek.</li>
+
+                            <li>Perhatikan hierarki informasi.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <div class="card-body">
+
+                        <h4 class="fw-bold">
+
+                            🤖 AI Prompt Hari Ini
+
+                        </h4>
+
+                        <div class="bg-light rounded p-3 mt-4">
+
+                            <code>
+
+Create a modern education logo with blue and white colors,
+flat vector style,
+minimalist,
+transparent background.
+
+                            </code>
+
+                        </div>
+
+                        <button class="btn btn-primary mt-3">
+
+                            <i class="bi bi-clipboard"></i>
+
+                            Copy Prompt
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+                <!-- =========================================
+                FOOTER
+        ========================================== -->
+
+        <footer class="mt-5 mb-4">
+
+            <div class="card border-0 shadow-sm">
+
+                <div class="card-body">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6">
+
+                            <h5 class="fw-bold">
+
+                                Workbook Project Based Learning
+
+                            </h5>
+
+                            <p class="text-secondary mb-0">
+
+                                Desain Komunikasi Visual<br>
+                                Kelas XI Produksi dan Siaran Program Televisi
+
+                            </p>
+
+                        </div>
+
+                        <div class="col-lg-6 text-lg-end mt-3 mt-lg-0">
+
+                            <small class="text-secondary">
+
+                                © 2026 SMK Negeri 6 Purworejo
+
+                            </small>
+
+                            <br>
+
+                            <small class="text-secondary">
+
+                                Version 1.0.0
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<!-- =========================================
+        JAVASCRIPT
+========================================== -->
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:700,
+    once:true
+});
+</script>
+
+<!-- Custom Javascript -->
+<script src="assets/js/storage.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/dashboard.js"></script>
+
+</body>
+
+</html>
