@@ -1,36 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta charset="UTF-8">
+    <title>Workbook DKV</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-<title>Project</title>
+    <!-- Bootstrap Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
 
-<link href="assets/css/style.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+  <body>
+    <!-- ==========================
+        MOBILE HEADER
+    =========================== -->
 
-</head>
+    <div class="d-lg-none sticky-top bg-white shadow-sm">
+      <div
+        class="container-fluid py-2 d-flex justify-content-between align-items-center"
+      >
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileSidebar"
+        >
+          <i class="bi bi-list"></i>
+        </button>
 
-<body>
+        <strong> Workbook DKV </strong>
 
-<div class="container py-5">
-
-    <div id="project-content">
-
-        Loading...
-
+        <a href="index.html" class="btn btn-outline-secondary">
+          <i class="bi bi-house"></i>
+        </a>
+      </div>
     </div>
 
-</div>
+    <!-- ==========================
+        LAYOUT
+    =========================== -->
 
-<script src="assets/js/project.js"></script>
-<script src="assets/js/worksheet.js"></script>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- ==========================
+                SIDEBAR DESKTOP
+            =========================== -->
 
-</body>
+        <aside class="col-lg-3 d-none d-lg-block">
+          <div class="workbook-sidebar">
+            <div class="p-3 border-bottom">
+              <h4 class="fw-bold mb-0">📚 Workbook DKV</h4>
 
+              <small class="text-secondary"> Project Navigation </small>
+            </div>
+
+            <div id="sidebar-nav"></div>
+          </div>
+        </aside>
+
+        <!-- ==========================
+                CONTENT
+            =========================== -->
+
+        <main class="col-lg-9">
+          <div class="container py-4">
+            <div
+              class="d-none d-lg-flex justify-content-between align-items-center mb-4"
+            >
+              <a href="index.html" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left"></i>
+
+                Dashboard
+              </a>
+
+              <span class="badge bg-primary">
+                Workbook Project Based Learning
+              </span>
+            </div>
+
+            <div id="project-content">Loading...</div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- ==========================
+        MOBILE SIDEBAR
+    =========================== -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">📚 Daftar Isi</h5>
+
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <div class="offcanvas-body" id="sidebar-nav-mobile"></div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/worksheet.js"></script>
+    <script src="assets/js/project.js"></script>
+  </body>
 </html>

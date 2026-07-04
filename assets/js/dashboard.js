@@ -7,70 +7,56 @@
  */
 
 const Dashboard = {
+  data: null,
 
-    data: null,
+  async init() {
+    await this.loadProjects();
 
-    async init() {
+    this.renderSemester1();
 
-        await this.loadProjects();
+    this.renderSemester2();
+  },
 
-        this.renderSemester1();
+  async loadProjects() {
+    const response = await fetch("assets/data/projects.json");
 
-        this.renderSemester2();
+    this.data = await response.json();
+  },
 
-    },
+  renderSemester1() {
+    const container = document.getElementById("semester1-projects");
 
-    async loadProjects() {
+    container.innerHTML = "";
 
-        const response = await fetch("assets/data/projects.json");
+    this.data.semester1.forEach((project) => {
+      container.innerHTML += this.projectCard(project);
+    });
+  },
 
-        this.data = await response.json();
+  renderSemester2() {
+    const container = document.getElementById("semester2-projects");
 
-    },
+    container.innerHTML = "";
 
-    renderSemester1() {
+    this.data.semester2.forEach((project) => {
+      container.innerHTML += this.projectCard(project);
+    });
+  },
 
-        const container = document.getElementById("semester1-projects");
+  projectCard(project) {
+    let badge = "secondary";
+    let button = "secondary";
+    let text = "Terkunci";
+    let action = `disabled`;
 
-        container.innerHTML = "";
+    if (project.status === "active") {
+      badge = "success";
+      button = "primary";
+      text = "Buka";
+      action = `href="project.html?id=${project.id}"`;
+    }
 
-        this.data.semester1.forEach(project => {
-
-            container.innerHTML += this.projectCard(project);
-
-        });
-
-    },
-
-    renderSemester2() {
-
-        const container = document.getElementById("semester2-projects");
-
-        container.innerHTML = "";
-
-        this.data.semester2.forEach(project => {
-
-            container.innerHTML += this.projectCard(project);
-
-        });
-
-    },
-
-    projectCard(project){
-
-        let badge="secondary";
-        let button="outline-secondary";
-        let text="Terkunci";
-
-        if(project.status==="active"){
-
-            badge="success";
-            button="primary";
-            text="Buka";
-
-        }
-
-        return `
+    return `
 
 <div class="col-lg-4 col-md-6">
 
@@ -105,7 +91,7 @@ ${project.duration}
 </small>
 
 <a
-href="project.html?id=${project.id}"
+${action}
 class="btn btn-${button} btn-sm">
 
 ${text}
@@ -121,13 +107,9 @@ ${text}
 </div>
 
 `;
-
-    }
-
+  },
 };
 
-document.addEventListener("DOMContentLoaded",()=>{
-
-    Dashboard.init();
-
+document.addEventListener("DOMContentLoaded", () => {
+  Dashboard.init();
 });
