@@ -29,85 +29,85 @@
       "status": "active"
     },
     {
-      "id": 4,
-      "title": "Membuat Moodboard",
-      "meeting": 4,
-      "duration": "4 JP",
-      "status": "active"
-    },
-    {
-      "id": 5,
-      "title": "Personal Branding",
-      "meeting": 5,
-      "duration": "4 JP",
-      "status": "active"
-    },
-    {
-      "id": 6,
-      "title": "Logo Pertamaku",
-      "meeting": 6,
-      "duration": "4 JP",
-      "status": "active"
-    },
-    {
-      "id": 7,
-      "title": "Typography",
-      "meeting": 7,
-      "duration": "4 JP",
-      "status": "active"
-    },
-    {
-      "id": 8,
-      "title": "Warna dalam Desain",
-      "meeting": 8,
-      "duration": "4 JP",
-      "status": "active"
-    },
-    {
-      "id": 9,
-      "title": "Poster Digital",
-      "meeting": 9,
-      "duration": "4 JP",
-      "status": "active"
-    },
+  "id": 4,
+  "title": "Moodboard & Konsep Produk Merchandise",
+  "meeting": 4,
+  "duration": "4 JP",
+  "status": "active"
+},
+{
+  "id": 5,
+  "title": "Eksplorasi Logo Brand",
+  "meeting": 5,
+  "duration": "4 JP",
+  "status": "active"
+},
+{
+  "id": 6,
+  "title": "Finalisasi Logo Brand",
+  "meeting": 6,
+  "duration": "4 JP",
+  "status": "active"
+},
+{
+  "id": 7,
+  "title": "Warna Brand",
+  "meeting": 7,
+  "duration": "4 JP",
+  "status": "active"
+},
+{
+  "id": 8,
+  "title": "Tipografi & Brand Board",
+  "meeting": 8,
+  "duration": "4 JP",
+  "status": "active"
+},
+{
+  "id": 9,
+  "title": "Desain Merchandise",
+  "meeting": 9,
+  "duration": "4 JP",
+  "status": "active"
+},
     {
       "id": 10,
-      "title": "Feed Instagram",
+      "title": "Foto Produk",
       "meeting": 10,
       "duration": "4 JP",
       "status": "active"
     },
     {
       "id": 11,
-      "title": "Story Instagram",
+      "title": "Poster Promosi",
       "meeting": 11,
       "duration": "4 JP",
       "status": "active"
     },
     {
       "id": 12,
-      "title": "Mockup Produk",
+      "title": "Feed Instagram",
       "meeting": 12,
       "duration": "4 JP",
       "status": "active"
     },
     {
       "id": 13,
-      "title": "Desain Kaos",
+      "title": "Story Instagram",
       "meeting": 13,
       "duration": "4 JP",
       "status": "active"
     },
     {
       "id": 14,
-      "title": "Desain Mug",
+      "title": "Konten Video Promosi",
       "meeting": 14,
       "duration": "4 JP",
       "status": "active"
     },
     {
       "id": 15,
-      "title": "Desain Pin",
+      "title": "Packaging & Label Produk",
       "meeting": 15,
       "duration": "4 JP",
       "status": "active"
@@ -128,7 +128,7 @@
     },
     {
       "id": 18,
-      "title": "Pameran Semester 1",
+      "title": "Presentasi & Pameran Produk",
       "meeting": 18,
       "duration": "4 JP",
       "status": "active"
@@ -138,7 +138,7 @@
   "semester2": [
     {
       "id": 19,
-      "title": "Creative Merchandise Business",
+      "title": "Pengembangan Produk Merchandise",
       "meeting": 19,
       "duration": "4 JP",
       "status": "locked"
@@ -152,35 +152,35 @@
     },
     {
       "id": 21,
-      "title": "Branding Event",
+      "title": "Strategi Branding Produk",
       "meeting": 21,
       "duration": "4 JP",
       "status": "locked"
     },
     {
       "id": 22,
-      "title": "Merchandise Sekolah",
+      "title": "Pengembangan Koleksi Merchandise",
       "meeting": 22,
       "duration": "4 JP",
       "status": "locked"
     },
     {
       "id": 23,
-      "title": "Kaos Event",
+      "title": "Desain Kaos",
       "meeting": 23,
       "duration": "4 JP",
       "status": "locked"
     },
     {
       "id": 24,
-      "title": "Mug Guru",
+      "title": "Desain Mug",
       "meeting": 24,
       "duration": "4 JP",
       "status": "locked"
     },
     {
       "id": 25,
-      "title": "Pin Organisasi",
+      "title": "Desain Pin & Gantungan Kunci",
       "meeting": 25,
       "duration": "4 JP",
       "status": "locked"
@@ -194,21 +194,21 @@
     },
     {
       "id": 27,
-      "title": "Produksi Massal",
+      "title": "Perencanaan Produksi",
       "meeting": 27,
       "duration": "4 JP",
       "status": "locked"
     },
     {
       "id": 28,
-      "title": "Packaging",
+      "title": "Packaging Produk",
       "meeting": 28,
       "duration": "4 JP",
       "status": "locked"
     },
     {
       "id": 29,
-      "title": "Foto Produk",
+      "title": "Fotografi Produk",
       "meeting": 29,
       "duration": "4 JP",
       "status": "locked"
@@ -222,14 +222,14 @@
     },
     {
       "id": 31,
-      "title": "Marketplace",
+      "title": "Marketplace & Katalog Digital",
       "meeting": 31,
       "duration": "4 JP",
       "status": "locked"
     },
     {
       "id": 32,
-      "title": "Bazar Sekolah",
+      "title": "Bazar & Penjualan",
       "meeting": 32,
       "duration": "4 JP",
       "status": "locked"
@@ -243,7 +243,7 @@
     },
     {
       "id": 34,
-      "title": "Portofolio",
+      "title": "Portofolio Produk",
       "meeting": 34,
       "duration": "4 JP",
       "status": "locked"
